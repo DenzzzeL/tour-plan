@@ -12,6 +12,10 @@ body {
   margin: auto;
 }
 
+.img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -363,6 +367,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -373,13 +381,13 @@ template {
 }
 
 .navbar-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 31px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  padding: 31px 0;
   color: #fff;
+  list-style-type: none;
 }
 
 .navbar-menu__link {
@@ -395,8 +403,8 @@ template {
 }
 
 .search {
-  display: flex;
   position: relative;
+  display: flex;
   height: 40px;
   overflow: hidden;
   border-radius: 6px;
@@ -407,10 +415,10 @@ template {
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
-  background-color: #F5FAFE;
   font-size: 12px;
   line-height: 15px;
   border: none;
+  background-color: #F5FAFE;
   color: #333333;
 }
 
@@ -424,6 +432,7 @@ template {
   right: 0;
   width: 65px;
   height: 100%;
+  padding: 0;
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
@@ -459,6 +468,9 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -483,6 +495,47 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+  }
+  .navbar__search, .navbar-menu, .navbar__user {
+    display: none;
+  }
+  .navbar-top__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 480px;
+    width: 92%;
+  }
+  .logo {
+    width: 99px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 92%;
+  }
+  .navbar-top {
+    height: 70px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
