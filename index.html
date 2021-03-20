@@ -17,11 +17,9 @@
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
-            <img
-              src="img/horizontal-logo.svg"
-              alt="Logo: Best Tour Plan"
-              class="logo__image"
-            />
+            <svg class="logo__horizontal">
+              <use xlink:href="img/sprite.svg#horizontal-logo"></use>
+            </svg>
           </a>
 
           <form action="#" class="search navbar__search">
@@ -31,7 +29,9 @@
               placeholder="Search Location"
             />
             <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
             </button>
           </form>
 
@@ -99,5 +99,48 @@
       <!-- /.container -->
     </nav>
     <!-- /.breadcrumb -->
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-info">
+          <div class="hotel-info__text">
+            <div class="hotel-wrapper">
+              <div class="stars">
+                <svg class="stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+                <svg class="stars__icon">
+                  <use xlink:href="img/sprite.svg#star"></use>
+                </svg>
+              </div>
+              <!-- /.stars -->
+              <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
+              <span class="offer hotel-info__offer">Flash Offer</span>
+            </div>
+            <!-- /.hotel-wrapper -->
+            <p class="hotel-description hotel-info__description">
+              Half-Board/ All Inclusive + Complimentary Activities + Child Stays
+              Free
+            </p>
+          </div>
+          <!-- /.hotel-info__text -->
+          <div class="rating hotel-info__rating">
+            <span class="rating__text">User Ratings</span>
+            <span class="rating__counter">4.5/</span>
+          </div>
+          <!-- /.hotel-info__right -->
+        </div>
+        <!-- /.hotel-info -->
+      </div>
+      <!-- /.container -->
+    </section>
   </body>
 </html>
