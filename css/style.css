@@ -1014,8 +1014,14 @@ template {
     width: 278px;
     margin-bottom: 38px;
   }
+  .hotel-bookandmap {
+    min-height: 403px;
+  }
   .slider {
     height: 179px;
+  }
+  .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */
