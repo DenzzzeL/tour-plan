@@ -963,9 +963,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     min-height: 450px;
   }
   .slider {
@@ -994,6 +991,14 @@ template {
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .hotel-bookandmap {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .booking {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -1011,9 +1016,6 @@ template {
   }
   .slider {
     height: 179px;
-  }
-  .booking {
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
