@@ -13,7 +13,7 @@
       display: flex
       flex-direction: column
       align-items: center
-      width: 730px
+      max-width: 730px
       margin: 45px auto 0
       padding: 0 62px 30px
       background-color: #fff
@@ -38,9 +38,9 @@
         background-repeat: no-repeat
     &__button
       position: absolute
-      top: 50%
+      top: 45%
       z-index: 99
-      transform: translateY(-50%)
+      transform: translateY(-52%)
       width: 30px
       height: 30px
       background-position: center
@@ -48,11 +48,12 @@
       border: none
       background-color: transparent
       cursor: pointer
-
       &--prev
         left: 0
+        margin-left: 18px
         background-image: url(../img/arrow-prev-gray.svg)
       &--next
+        margin-right: 18px
         right: 0
         background-image: url(../img/arrow-next-gray.svg)
     &__profile
@@ -78,6 +79,10 @@
       font-weight: normal
       font-size: 10px
       line-height: 13px
+    &__icon
+      width: 8px
+      height: 8px
+      margin-right: -2px
     &__text
       max-width: 537px
       margin: 0 auto
