@@ -51,3 +51,4 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     onlyInViewport: true,
   },
 });
+$('.newsletter').parallax({imageSrc: 'img/newsletter-bg-2.jpg'});
