@@ -56,6 +56,14 @@
         max-width: 580px
         &:after,&:before
           display: none
+      &__button
+        top: 50%
+        &--prev
+          margin-left: -1px
+        &--next
+          margin-right: 1px
+      &__text
+        max-height: 135px
 
 @media (max-width: 730px)
   .container
@@ -165,6 +173,9 @@
       margin: 0 auto 42px
       font-size: 18px
       line-height: 23px
+    &-slider
+      &__text
+        max-height: 270px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -193,3 +204,9 @@
       &__strong
         font-size: 30px
         line-height: 38px
+@media (max-width: 320px)
+  .container
+    max-width: 280px
+  .newsletter
+    &-wrapper
+      max-width: 280px
