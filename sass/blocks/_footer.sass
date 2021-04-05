@@ -39,7 +39,6 @@
     flex-wrap: wrap
     max-width: 540px
     margin-top: 37px
-
   &__ul
     margin: 0
     padding: 0
@@ -54,7 +53,7 @@
     text-transform: uppercase
     &--inline
       margin: 0 41px 0 0
-    &--mb-3
+    &--mb-4
       margin-bottom: -3px
       margin-top: -9px
   &__item
@@ -64,10 +63,11 @@
     line-height: 160%
     color: $gray
     &--mb-2
-      margin-bottom: 22px
-
+      margin-bottom: 20px
   &__icon-wrapper
     min-width: 43px
+    margin-left: 7px
+    margin-top: 4px
   &__text
     margin: 27px 0 22px 0
     font-size: 14px
@@ -79,6 +79,7 @@
   &__input
     min-width: 254px
     height: 50px
+    margin-bottom: 15px
     padding: 0 23px
     font-size: 12px
     line-height: 15px
@@ -90,9 +91,8 @@
     width: 20px
     height: 21px
   &__message
-    min-width: 540px
+    // max-width: 540px
     min-height: 123px
-    margin-top: 15px
     margin-bottom: 22px
     padding: 18px 23px
     flex-basis: 100%
@@ -102,10 +102,15 @@
     border: none
     outline: none
     resize: none
+  &__fields
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
   &__button
     max-width: 160px
     min-height: 50px
-    padding: 18px 66px
+    padding: 18px 64px
     font-weight: bold
     font-size: 12px
     line-height: 15px
@@ -122,13 +127,13 @@
     color: #E0E0E0
   &__bottom
     display: grid
-    grid-template-columns: 696px 1fr
-    grid-template-areas: "info payment"
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-areas: ".info payment"
     max-width: 1110px
     margin-top: 95px
   &__info
     grid-area: info
-    justify-self: end
+    justify-self: center
     align-self: end
     font-size: 12px
     line-height: 15px
