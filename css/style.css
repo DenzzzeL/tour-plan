@@ -1194,6 +1194,16 @@ template {
   grid-column: span 2;
 }
 
+.footer__contact-links {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 160%;
+  list-style: none;
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
 .footer__contact-form {
   grid-column: span 2;
 }
@@ -1361,8 +1371,10 @@ template {
   line-height: 15px;
 }
 
-.footer__policy:not(:last-child) {
+.footer__policy {
   margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer__payment {
@@ -1971,8 +1983,8 @@ template {
     min-height: 47px;
     margin-top: 31px;
   }
-  .footer__policy:not(:last-child) {
-    margin-right: 7px;
+  .footer__policy {
+    margin-right: 5px;
   }
 }
 

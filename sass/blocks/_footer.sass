@@ -30,6 +30,14 @@
   &__contact
     &-details
       grid-column: span 2
+    &-links
+      margin: 0
+      padding: 0
+      font-size: 14px
+      line-height: 160%
+      list-style: none
+      text-decoration: none
+      color: $gray
     &-form
       grid-column: span 2
   &__form
@@ -137,8 +145,10 @@
     align-self: end
     font-size: 12px
     line-height: 15px
-  &__policy:not(:last-child)
+  &__policy
     margin-right: 10px
+    text-decoration: none
+    color: $light
   &__payment
     justify-self: end
     grid-area: payment
