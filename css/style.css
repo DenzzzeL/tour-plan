@@ -1281,6 +1281,7 @@ template {
 .footer__link {
   text-decoration: none;
   color: #BDBDBD;
+  white-space: nowrap;
 }
 
 .footer__input {
