@@ -558,6 +558,18 @@ template {
   margin-bottom: 20px;
 }
 
+.hotel__button {
+  padding: 12px 22px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  min-width: 120px;
+}
+
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
