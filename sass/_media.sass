@@ -140,6 +140,15 @@
     &__info
       grid-column: span 2
       justify-self: start
+  .modal
+    &__dialog
+      width: 92%
+    &__fields
+      display: flex
+      flex-direction: column-reverse
+      align-items: flex-start
+      justify-content: space-between
+      min-height: 80px
 
 @media (max-width: 730px)
   .container
@@ -184,7 +193,6 @@
         &--mobile
           &--visible
             display: block
-
     &-top
       &__menu-button
         display: flex
@@ -197,7 +205,6 @@
         border: none
         background-color: $light
         cursor: pointer
-
   .menu
     &-button
       &__line
@@ -211,7 +218,6 @@
         margin-top: 10px
         margin-bottom: 10px
         color: $light
-
   .stars
     flex-basis: auto
   .hotel
@@ -345,6 +351,10 @@
       line-height: 23px
   .card
     width: 100%
+  .modal
+    &__button
+      width: 100%
+      padding: 18px 28px
 
 @media (min-width: 320px) and (max-width: 480px)
   .container
@@ -358,7 +368,6 @@
       padding-top: 26px
     &__search
       max-width: 245px
-
   .hotel
     &-info
       &__description
@@ -448,6 +457,9 @@
       margin-top: 31px
     &__policy
       margin-right: 5px
+  .modal
+    &__dialog
+      padding: 20px
 
 @media (max-width: 320px)
   .container

@@ -23,6 +23,43 @@ button {
   cursor: pointer;
 }
 
+.input {
+  height: 50px;
+  padding: 0 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  background: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.message {
+  padding: 18px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1226,17 +1263,6 @@ template {
 }
 
 .footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   max-width: 540px;
   margin-top: 37px;
 }
@@ -1303,15 +1329,7 @@ template {
 
 .footer__input {
   min-width: 254px;
-  height: 50px;
   margin-bottom: 15px;
-  padding: 0 23px;
-  font-size: 12px;
-  line-height: 15px;
-  background: #fff;
-  border-radius: 4px;
-  border: none;
-  outline: none;
 }
 
 .footer__social-icon {
@@ -1322,15 +1340,8 @@ template {
 .footer__message {
   min-height: 123px;
   margin-bottom: 22px;
-  padding: 18px 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  font-size: 12px;
-  line-height: 15px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  resize: none;
 }
 
 .footer__fields {
@@ -1403,6 +1414,110 @@ template {
   grid-area: payment;
   width: 136px;
   height: 22px;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  max-width: 478px;
+  min-height: 487px;
+  padding: 14px 88px;
+  background-color: #0A223D;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__message {
+  width: 100%;
+  min-height: 123px;
+  margin-bottom: 15px;
+}
+
+.modal__fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.modal__button {
+  min-width: 110px;
+  min-height: 50px;
+  padding: 18px 64px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.modal__unstarred {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
 }
 
 @media (max-width: 1200px) {
@@ -1612,6 +1727,25 @@ template {
     grid-column: span 2;
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .modal__dialog {
+    width: 92%;
+  }
+  .modal__fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 80px;
   }
 }
 
@@ -1908,6 +2042,10 @@ template {
   .card {
     width: 100%;
   }
+  .modal__button {
+    width: 100%;
+    padding: 18px 28px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -2067,6 +2205,9 @@ template {
   }
   .footer__policy {
     margin-right: 5px;
+  }
+  .modal__dialog {
+    padding: 20px;
   }
 }
 
