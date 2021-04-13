@@ -2048,6 +2048,14 @@ template {
   }
 }
 
+@media (max-height: 500px) {
+  .modal__dialog {
+    position: absolute;
+    -webkit-transform: translate(-50%, -27%);
+            transform: translate(-50%, -27%);
+  }
+}
+
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     width: 92%;

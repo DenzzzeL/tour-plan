@@ -48,7 +48,7 @@ function openModal() {
   var modalOverlay = $('.modal__overlay');
   var modalDialog = $('.modal__dialog');
   modalOverlay.addClass('modal__overlay--visible');
-  modalDialog.addClass('modal__dialog--visible');
+  modalDialog.addClass('modal__dialog--visible'); 
 }
 
 function closeModal(event) {
