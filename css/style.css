@@ -1441,8 +1441,8 @@ template {
   left: 50%;
   z-index: 101;
   max-width: 478px;
-  min-height: 487px;
-  padding: 14px 88px;
+  max-height: 510px;
+  padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1466,6 +1466,7 @@ template {
 }
 
 .modal__title {
+  margin-top: 0;
   margin-bottom: 15px;
   text-align: center;
   font-weight: bold;
@@ -2050,9 +2051,8 @@ template {
 
 @media (max-height: 500px) {
   .modal__dialog {
-    position: absolute;
-    -webkit-transform: translate(-50%, -27%);
-            transform: translate(-50%, -27%);
+    height: 100%;
+    overflow: auto;
   }
 }
 
