@@ -144,7 +144,7 @@
           <div class="hotel-info__text">
             <h1 class="hotel-name hotel-info__name">Your message delivered!</h1>
             <p class="hotel-description hotel-info__description">
-              Our manager will call you after 5 minutes.
+              Our manager will call you in 5 minutes.
             </p>
             <a href="index.html"><button class="hotel__button">Back</button></a>
           </div>
@@ -322,18 +322,30 @@
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-4">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <!-- /.footer__input-group -->
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  data-phone="digit"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  minlength="18"
+                  required
+                />
+              </div>
+              <!-- /.footer__input-group -->
+
               <textarea
                 class="message footer__message"
                 placeholder="Message"
