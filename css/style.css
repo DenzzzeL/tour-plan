@@ -1336,6 +1336,17 @@ template {
   white-space: nowrap;
 }
 
+.footer__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
 .footer__input {
   width: 100%;
 }
@@ -1552,6 +1563,12 @@ template {
     width: 230px;
     height: 230px;
   }
+  .footer__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1677,6 +1694,12 @@ template {
         grid-template-columns: repeat(3, -webkit-max-content);
         grid-template-columns: repeat(3, max-content);
     grid-row-gap: 50px;
+  }
+  .footer__inputs {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 47%;
@@ -2001,6 +2024,12 @@ template {
   }
   .footer__form {
     max-width: 576px;
+  }
+  .footer__inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer__input-group {
     -ms-flex-preferred-size: 100%;

@@ -12,6 +12,8 @@
     width: 230px
     height: 230px
   .footer
+    &__inputs
+      flex-direction: column
     &__input
       &-group
         flex-basis: 100%
@@ -98,6 +100,8 @@
     &-wrapper
       grid-template-columns: repeat(3, max-content )
       grid-row-gap: 50px
+    &__inputs
+      flex-direction: row
     &__input
       &-group
         flex-basis: 47%
@@ -311,6 +315,8 @@
         grid-column: 1
     &__form
       max-width: 576px
+    &__inputs
+      flex-direction: column
     &__input
       &-group
         flex-basis: 100%
