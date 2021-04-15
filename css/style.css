@@ -1451,8 +1451,8 @@ template {
   background-color: rgba(0, 143, 223, 0.39);
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .modal__overlay--visible {

@@ -99,4 +99,7 @@ $(".subscribe").validate({
 // Phone mask
 $('[data-phone=digit]').mask('+7 (999) 999-99-99');
 
+// Animation
+AOS.init();
+
 });
