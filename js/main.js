@@ -100,6 +100,11 @@ $(".subscribe").validate({
 $('[data-phone=digit]').mask('+7 (999) 999-99-99');
 
 // Animation
-AOS.init();
+AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
 
 });
