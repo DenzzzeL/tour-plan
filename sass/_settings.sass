@@ -12,16 +12,19 @@ img
 button
   outline: none
   cursor: pointer
+textarea
+  &::placeholder
+    color: $gray
 .input
   height: 50px
   padding: 0 23px
   font-size: 12px
   line-height: 15px
-  color: $gray
   background: $light
   border-radius: 4px
   border: none
   outline: none
+  color: $text-color
 .form
   display: flex
   align-items: center
@@ -31,7 +34,7 @@ button
   padding: 18px 23px
   font-size: 12px
   line-height: 15px
-  color: $gray
+  color: $text-color
   border-radius: 4px
   border: none
   outline: none
