@@ -7,10 +7,14 @@
     max-width: 730px
     margin: auto
   &-title
+    max-width: 350px
     margin: 0
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: auto
     color: $light
     &__strong
       display: block
@@ -18,6 +22,8 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+      text-overflow: ellipsis
+      overflow: auto
 .subscribe
   position: relative
   width: 350px
